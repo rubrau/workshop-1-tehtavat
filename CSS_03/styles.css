@@ -77,7 +77,7 @@ input[type="submit"] :hover {
     height: 50px;
     background-color: lightgreen;
     position: relative;
-    animation: move 2s infinite alternate;
+    animation: move 2s infinite;
 
 }
 
