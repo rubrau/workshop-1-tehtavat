@@ -1,123 +1,121 @@
 p {
-    color: green;
-}
-
-body {
-    background-color: darkgrey;
-}
-
-h1 {
+    color: blue;
+  }
+  
+  body {
+    background-color: lightgray;
+  }
+  
+  h1 {
     font-size: 2em;
-}
+  }
 
-div {
-    padding: 2px;
+  div {
+    padding: 20px;
     margin: 10px;
-}
+  }
 
-table {
+  table {
     width: 100%;
     border-collapse: collapse;
-}
-
-th, td {
+  }
+  
+  th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-}
-
-th {
-    background-color: #14556a;
-}
-
-form {
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-label {
+  }
+  
+  label {
     font-weight: bold;
-}
-
-input[type="text"], input[type="email"] {
+  }
+  
+  input[type="text"], input[type="email"] {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #902d2d;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
 
-input[type="submit"] :hover {
-    background-color: #88340a;
-}
-
-.transition-button {
+  .transition-button {
     background-color: lightblue;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.transition-button :hover {
+  }
+  
+  .transition-button:hover {
     background-color: lightcoral;
+  }
 
-}
-
-.animation-box {
+  .animation-box {
     width: 50px;
     height: 50px;
-    background-color: lightgreen;
+    background-color: green;
     position: relative;
-    animation: move 2s infinite;
-
-}
-
-@keyframes move {
+    animation: move 1s infinite alternate;
+  }
+  
+  @keyframes move {
     from {
-        left: 0;
+      left: 0;
     }
     to {
-        left: 100px;
+      left: 1200px;
     }
-}
+  }
 
-.pseudo-list li:nth-child(odd) {
-    background-color: rgb(134, 19, 19);
-}
+  .pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+  }
+  
+  .pseudo-list li:nth-child(even) {
+    background-color: white;
+  }
 
-.pseudo-list li:nth-child(even) {
-    background-color: rgb(174, 52, 12);
-}
-
-.filter-image {
+  .filter-image {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
-}
-
-.filter-image :hover {
+  }
+  
+  .filter-image:hover {
     filter: grayscale(0%);
-}
+  }
 
-.quote {
+  .quote {
     position: relative;
     padding-left: 20px;
     font-style: italic;
-}
-
-.quote::before {
-    content: '';
+  }
+  
+  .quote::before {
+    content: 'Terve!!!';
     font-size: 40px;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
-    color: rgb(233, 16, 16);
-}
+    color: orange;
+  }
